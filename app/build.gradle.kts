@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.example.manzano.nathanielree.block4.p1.paw_adopt_paw"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.manzano.nathanielree.block4.p1.paw_adopt_paw"

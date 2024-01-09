@@ -30,7 +30,7 @@
         android:layout_width="105dp"
         android:layout_height="56dp"
         android:layout_marginTop="108dp"
-        android:text="Login"
+        android:text="Sign Up"
         android:textColor="@color/black"
         android:textSize="30dp"
         android:textStyle="bold"
@@ -54,43 +54,75 @@
             android:layout_width="match_parent"
             android:layout_height="530dp">
 
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_login2"
+                android:layout_width="215dp"
+                android:layout_height="49dp"
+                android:layout_marginBottom="64dp"
+                android:background="@drawable/rounded_button"
+                android:backgroundTint="@color/midgreen"
+                android:text="SignUp"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="parent" />
+
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
-                android:text="Hi Welcome \nBack!"
+                android:text="Let's Get Started"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.091"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-
             <EditText
                 android:id="@+id/til_username"
-                android:layout_width="292dp"
-                android:layout_height="43dp"
-                android:layout_marginTop="24dp"
+                android:layout_width="260dp"
+                android:layout_height="38dp"
                 android:autofillHints="emailAddress"
                 android:background="@drawable/custom_edittext"
                 android:drawablePadding="10dp"
                 android:gravity="center_vertical"
-                android:hint="Username/Email:"
+                android:hint="Full Name:"
+                android:inputType="textEmailAddress"
+                android:maxEms="50"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textColorHint="@color/white"
+                tools:layout_editor_absoluteX="63dp"
+                tools:layout_editor_absoluteY="93dp" />
+
+            <EditText
+                android:id="@+id/til_username2"
+                android:layout_width="260dp"
+                android:layout_height="38dp"
+                android:layout_marginTop="36dp"
+                android:autofillHints="emailAddress"
+                android:background="@drawable/custom_edittext"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:hint="Email:"
                 android:inputType="textEmailAddress"
                 android:maxEms="50"
                 android:maxLines="1"
                 android:padding="10dp"
                 android:textColorHint="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.595"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+                app:layout_constraintTop_toBottomOf="@+id/til_username" />
 
             <EditText
                 android:id="@+id/til_password"
-                android:layout_width="297dp"
-                android:layout_height="38dp"
-                android:layout_marginTop="20dp"
+                android:layout_width="260dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="40dp"
                 android:autofillHints="password"
                 android:background="@drawable/custom_edittext"
                 android:drawablePadding="10dp"
@@ -102,75 +134,28 @@
                 android:padding="10dp"
                 android:textColorHint="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.629"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/til_username" />
+                app:layout_constraintTop_toBottomOf="@+id/til_username2" />
 
-            <CheckBox
-                android:id="@+id/show_pass_login"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="56dp"
-                android:gravity="center"
-                android:text="Show Password"
-                app:layout_constraintEnd_toStartOf="@+id/textView5"
-                tools:layout_editor_absoluteY="207dp" />
-
-            <TextView
-                android:id="@+id/textView5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="72dp"
-                android:layout_marginEnd="32dp"
-                android:text="Forgot Password?"
+            <EditText
+                android:id="@+id/til_password2"
+                android:layout_width="260dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="28dp"
+                android:autofillHints="password"
+                android:background="@drawable/custom_edittext"
+                android:drawablePadding="10dp"
+                android:ems="30"
+                android:gravity="center_vertical"
+                android:hint="Confirm Password:"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textColorHint="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/til_password" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/til_password" />
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btn_login"
-                android:layout_width="215dp"
-                android:layout_height="49dp"
-                android:layout_marginBottom="16dp"
-                android:background="@drawable/rounded_button"
-                android:backgroundTint="@color/midgreen"
-                android:text="Login"
-                android:textColor="@color/white"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/tv_havent_account"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.502"
-                app:layout_constraintStart_toStartOf="parent" />
-
-            <TextView
-                android:id="@+id/tv_havent_account"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="144dp"
-                android:text="Don't have an account? "
-                android:textAlignment="center"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
-
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Terms of Service"
-                android:textColor="@color/black"
-                tools:layout_editor_absoluteX="37dp"
-                tools:layout_editor_absoluteY="482dp" />
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="48dp"
-                android:layout_marginBottom="28dp"
-                android:text="Privacy policy"
-                android:textColor="@color/black"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

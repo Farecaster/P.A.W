@@ -15,5 +15,18 @@
         <item name="android:textAlignment">center</item>
     </style>
 
-    <style name="Theme.Pawadoptpaw" parent="Base.Theme.Pawadoptpaw" />
+    <style name="Theme.Pawadoptpaw" parent="Base.Theme.Pawadoptpaw" >
+    </style>
+
+
+    <style name="custom_card_view_style" parent="Widget.MaterialComponents.CardView" >
+        <item name="shapeAppearanceOverlay">@style/custom_card_view</item>
+    </style>
+    <style name="custom_card_view" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">70dp</item>
+        <item name="cornerSizeTopRight">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style>
 </resources>

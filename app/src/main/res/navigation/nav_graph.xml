@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/splashFragment2">
+    app:startDestination="@id/splash2Fragment">
     <fragment
         android:id="@+id/splashFragment2"
         android:name="com.example.manzano.nathanielree.block4.p1.paw_adopt_paw.SplashFragment"
@@ -17,10 +17,23 @@
         android:id="@+id/splash2Fragment"
         android:name="com.example.manzano.nathanielree.block4.p1.paw_adopt_paw.Splash2Fragment"
         android:label="fragment_splash2"
-        tools:layout="@layout/fragment_splash2" />
+        tools:layout="@layout/fragment_splash2" >
+        <action
+            android:id="@+id/action_splash2Fragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.example.manzano.nathanielree.block4.p1.paw_adopt_paw.LoginFragment"
         android:label="fragment_login"
-        tools:layout="@layout/fragment_login" />
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_signupFragment2"
+            app:destination="@id/signupFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/signupFragment2"
+        android:name="com.example.manzano.nathanielree.block4.p1.paw_adopt_paw.SignupFragment"
+        android:label="fragment_signup"
+        tools:layout="@layout/fragment_signup" />
 </navigation>
