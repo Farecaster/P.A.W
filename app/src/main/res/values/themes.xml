@@ -1,10 +1,12 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.Pawadoptpaw" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-    </style>
 
+        <item name="colorPrimary">@color/newPrimaryDarkGreen</item>
+        <item name="colorPrimaryVariant">@color/newPrimaryDarkGreen</item>
+        <item name="android:statusBarColor" tools:targetApi="l"> ?attr/colorPrimaryVariant</item>
+
+    </style>
 
     <style name="ButtonWhite">
         <item name="android:textColor">@color/midgreen</item>
@@ -16,6 +18,10 @@
     </style>
 
     <style name="Theme.Pawadoptpaw" parent="Base.Theme.Pawadoptpaw" >
+    </style>
+
+    <style name="App.Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/midgreen</item>
     </style>
 
 
